@@ -3,7 +3,7 @@ var router = express.Router();
 
 var ApiController = require('../Controllers/apiController');
 
-router.get('/hola1', ApiController.prueba);
+router.get('/equipos/:grupo', ApiController.lista_equipos_grupo);
 
 
 module.exports = router;
